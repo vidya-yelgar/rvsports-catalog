@@ -1,1 +1,29 @@
 
+[
+  {
+    "id": 1,
+    "name": "Ganesh Polo T-Shirt",
+    "price": 260,
+    "minOrder": 50,
+    "image": "images/white.png",
+    "colors": [
+      "white",
+      "blue",
+      "red",
+      "maroon"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Ganesh Round Neck",
+    "price": 260,
+    "minOrder": 50,
+    "image": "images/white.png",
+    "colors": [
+      "white",
+      "blue",
+      "red",
+      "maroon"
+    ]
+  }
+]
