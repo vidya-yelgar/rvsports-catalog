@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganesh Polo T-Shirt</title>
 
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="product-container">
+
+<div class="image-section">
+
+<img id="shirtImage"
+src="images/white.png"
+alt="T-Shirt">
+
+</div>
+
+<div class="details">
+
+<h2>Ganesh Polo T-Shirt</h2>
+
+<h3>₹260 / Piece</h3>
+
+<p><b>Minimum Order :</b> 50 Pieces</p>
+
+<h4>Available Colours</h4>
+
+<div class="colors">
+
+<button class="color white"
+onclick="changeImage('white')"></button>
+
+<button class="color blue"
+onclick="changeImage('blue')"></button>
+
+<button class="color red"
+onclick="changeImage('red')"></button>
+
+<button class="color maroon"
+onclick="changeImage('maroon')"></button>
+
+</div>
+
+<h4>Size</h4>
+
+<select id="size">
+
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+<option>XXL</option>
+
+</select>
+
+<h4>Quantity</h4>
+
+<input
+type="number"
+id="qty"
+value="50"
+min="50">
+
+<br><br>
+
+<button onclick="orderWhatsapp()">
+Order on WhatsApp
+</button>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
