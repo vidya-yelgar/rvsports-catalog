@@ -1,45 +1,33 @@
-function changeImage(color){
+const search=document.getElementById("search");
 
-document.getElementById("shirtImage").src =
-"images/"+color+".png";
+search.addEventListener("keyup",()=>{
 
-}
+let text=search.value.toLowerCase();
 
-function orderWhatsapp(){
+document.querySelectorAll(".card")
 
-let size=document.getElementById("size").value;
+.forEach(card=>{
 
-let qty=document.getElementById("qty").value;
+let name=card
 
-let colour=document
-.getElementById("shirtImage")
-.src
-.split("/")
-.pop()
-.replace(".png","");
+.querySelector("h2")
 
-let message=
+.innerText
 
-`Hello RV SPORTS,
+.toLowerCase();
 
-I want to order.
+card.style.display=
 
-Design : Ganesh Polo
+name.includes(text)
 
-Colour : ${colour}
+?
 
-Size : ${size}
+"block"
 
-Quantity : ${qty}
+:
 
-Please send quotation.`;
+"none";
 
-window.open(
+});
 
-"https://wa.me/919619005667?text="
-
-+encodeURIComponent(message)
-
-);
-
-}
+});
