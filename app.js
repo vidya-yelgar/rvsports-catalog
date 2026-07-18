@@ -1,20 +1,45 @@
-const search = document.getElementById("search");
+function changeImage(color){
 
-search.addEventListener("keyup", function(){
+document.getElementById("shirtImage").src =
+"images/"+color+".png";
 
-let value = this.value.toLowerCase();
-
-let card = document.querySelector(".card");
-
-let title = card.querySelector("h2").innerText.toLowerCase();
-
-if(title.includes(value))
-{
-card.style.display="block";
-}
-else
-{
-card.style.display="none";
 }
 
-});
+function orderWhatsapp(){
+
+let size=document.getElementById("size").value;
+
+let qty=document.getElementById("qty").value;
+
+let colour=document
+.getElementById("shirtImage")
+.src
+.split("/")
+.pop()
+.replace(".png","");
+
+let message=
+
+`Hello RV SPORTS,
+
+I want to order.
+
+Design : Ganesh Polo
+
+Colour : ${colour}
+
+Size : ${size}
+
+Quantity : ${qty}
+
+Please send quotation.`;
+
+window.open(
+
+"https://wa.me/919619005667?text="
+
++encodeURIComponent(message)
+
+);
+
+}
